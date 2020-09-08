@@ -1,0 +1,289 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: MadEngineer Profile's
+description: 'Profil dari MadEngineer (Muhammad Syafiq, ST)'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://patrick-jekyll-demo.ducor.vercel.app" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+html_dir:  '' # ltl ( default ) "rtl", ltl
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+permalink: /blog/:title:output_ext
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+comments:
+  provider               : 'disqus' # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : 'patrick-ducor' # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+# google map key
+google_map_key           : 'AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s' # false (default),
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+##########################################################################
+################# seo ####################################################
+##########################################################################
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+og_image                 : '/images/profile.jpg' # Open Graph/Twitter default site image
+header: 
+  - image                 : '/images/profile.jpg'
+
+###########################################################################
+########### Home Card #####################################################
+###########################################################################
+
+home_style:  'particles-bg' # background-image (default), "background-color", "particles-bg", "video-bg"
+color_scheme:   'pink'
+
+first_name: Muhammad
+last_name: Syafiq
+email: syafiqguitarist@gmail.com
+phone: +62 857311 95169
+address: Surabaya, Jawa Timur, Indonesia.
+freelance_hire: true
+employment_hire: true
+professions: 
+  - full stack developer
+  - IT Consultant
+  - senior developer
+  - freelancer
+  - senior engineer
+author_description: "<strong>Hello, I’m a Syafiq</strong> known as <strong>MadEngineer</strong>,<br/> senior full stack developer based on Indonesia. <br> I have rich experience in developing website, mobile apps, and desktop apps. Also I am good at several programming environment <strong>python, javascript, html, css, nodejs, ruby, vb, jquery, &amp; many more.</strong>"
+social_link:
+  - name: download
+    text: "Download CV"
+    link: "#contacts-card"
+  - name: github 
+    text: ""
+    link: "https://github.com/muhsyafiq"
+  - name: facebook 
+    text: ""
+    link: "https://www.facebook.com/syafiq.caem/"
+
+######### Our Services ######################
+
+our_services:
+  - name: "Web Development"
+    icon: "la la-html5"
+    description: "Modern and mobile-ready website that will help of your marketing."
+  
+  - name: "Android Mobile Development"
+    icon: "la la-mobile"
+    description: "Build using React Native / Android Native."
+  
+  - name: "IT Consultant"
+    icon: "la la-bullhorn"
+    description: "We Provide solution for your software development."
+  
+  - name: "IoT / Robotika (Internet of Things)"
+    icon: "la la-dropbox"
+    description: "No description, Cause its DIY."
+  
+  - name: "AI Development"
+    icon: "la la-sitemap"
+    description: "Yes, i can do AI too, i can help you build your machine learning model (NLP,Face Recognition,Object Detection,Medical Analysis,etc)."  
+
+    
+########### Fun Facts ###############
+fun_facts:
+  - name: "16 Projects Completed"
+    icon: "la la-lightbulb-o"
+  - name: "50+ Books Readed"
+    icon: "la la-book"
+  - name: "100 000+ Lines of Code"
+    icon: "la la-code"
+  - name: "10 Satisfied Customers"
+    icon: "la la-smile-o"
+
+  
+
+############ Clients ##########
+clients:
+  - image: "images/clients/m2tech.png"
+    name: "M2Tech"
+    url: "#"
+  - image: "images/clients/polres_kotabaru.png"
+    name: "Polres Kotabaru Kalimantan Selatan"
+    url: "#"
+  - image: "images/clients/satlantas_poltanbu.jpg"
+    name: "Polres Tanah Bumbu Kalimantan Selatan"
+    url: "#"
+  
+
+#################################################
+############ resume-card ########################
+#################################################
+############ My Experience ###################
+
+my_experience:
+  - name: "Freelancer Full Stack Developer and IT Consultant"
+    date: 2018-Present <span>|</span> M2TechBusiness.
+    description: "Partnership with my friend to build service or software for their client's."
+  - name: "Software Engineer"
+    date: "2018-2018 <span>|</span> Codigo.id."
+    description: "Build Service for AI Development."
+  - name: "Web Development"
+    date: "2017-2018 <span>|</span> M2Tech."
+    description: "Partnership with my friend to build web for their client's."  
+  - name: "Internship LIPI (Physics Department)"
+    date: "2016-2016 <span>|</span> LIPI."
+    description: "Research and Build OPM with Raspberry Pi from scratch (Paper Available)."
+  
+################ My Education #############
+my_education:
+  - name: "Engineering Physics"
+    date: 2012-2017 <span>|</span> Photonics Field of Study.
+    description: "Bachelor's Degree in Engineering Physics Department, Faculty of Industry, Institute Technology Sepuluh Nopember Surabaya"
+  - name: "Research Internship"
+    date: "2016-2016 <span>|</span> LIPI"
+    description: "Research and Build OPM with Raspberry Pi from scratch (Paper Available)"
+
+personal_skills:
+  - name: 'Communication'
+    percentage: '70'
+  
+  - name: 'Team Work'
+    percentage: '65'
+  
+  - name: 'Leadership'
+    percentage: '75'
+  
+  - name: 'Language'
+    percentage: '85'
+
+  - name: 'Learning Ability (Adapt to new Programming Language / Learn fast on new things)'
+    percentage: '90'
+  
+professional_skills:
+  - name: 'Python'
+    percentage: '85'
+  
+  - name : 'NodeJS'
+    percentage: '80'
+  
+  - name : 'Native Language (C,C++)'
+    percentage: '55'
+  
+  - name : 'Android Native (Java,Kotlin)'
+    percentage: '57'
+  
+  - name : 'React/React Native'
+    percentage: '74'
+  
+  - name: 'MongoDB / MySQL'
+    percentage: '65'
+  
+  - name: 'HTML / CSS / JS'
+    percentage: '95'
+  
+  - name: 'Server Side (Nginx, Apache, etc)'
+    percentage: '68'
+
+
+#############################################
+################## works-card ###############
+#############################################
+portfolio_categories:
+  - name: "Photo"
+    slug: "photo"
+
+portfolios:
+  - category: 'photo'
+    image: 'images/works/w5.jpeg'
+    name: 'Simulasi Tes SIM'
+    type: image
+  
+  - category: 'photo'
+    image: 'images/works/w6.jpeg'
+    name: 'Siparama'
+    type: image
+  
+  - category: 'photo'
+    image: 'images/works/w4.jpeg'
+    name: 'HelpMe Siparama'
+    type: image
+  
+  - category: 'photo'
+    image: 'images/works/w9.jpeg'
+    name: 'JituProjects'
+    type: image
+  
+  - category: 'photo'
+    image: 'images/works/w8.jpeg'
+    name: 'Beranda JituProjects'
+    type: image
+
