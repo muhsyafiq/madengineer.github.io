@@ -244,6 +244,9 @@ professional_skills:
   - name : 'React/React Native'
     percentage: '74'
   
+  - name : 'VueJS'
+    percentage: '70'
+  
   - name: 'MongoDB / MySQL'
     percentage: '65'
   
